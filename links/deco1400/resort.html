@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,700;1,300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500&display=swap" rel="stylesheet"> 
+        <title>The Resort</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body id="bodyorange">
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <nav id="menu">
+
+            <ul>
+                
+                <li><a id="logo"></a></li> 
+                <li><a href="index.html" id="mobilehome">Home</a></li>
+                <li><a href="#aboutus" onclick="clickNavA()">About Us <i class="material-icons">&#xe5c5;</i></a>
+                <ul class="sub-menu" id="sub-menu-about">
+                    <li><a href="greenhouse.html">The Greenhouse</a></li>
+                    <li><a href="resort.html">The Resort</a></li>
+                    <li><a href="greenhouse.html#wherearewe">Where are we?</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li><a href="#whatweoffer" onclick="clickNavW()">What we offer <i class="material-icons">&#xe5c5;</i></a>
+                    <ul class="sub-menu" id="sub-menu-wwo">
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="butterflies.html">Butterflies and Rides</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="booknow1.html" id="menubooknow">Book now</a></li>
+                </ul>
+        </nav>
+    
+        <div class="main">
+            <section id="resort">
+            <h1>The Resort</h1>
+            <section class="pagetitleimg" id="resorttitleimg" title="Picture of Resort Reception">
+
+                <div id="resorttitle">
+                    <p>Becoming Tiny is not the only thing we’re capable of. Our architecture was built by the finest, 
+                        also shrunken down to scale. At our resort, you can experience
+                         how the intricate diversity of nature can be blended seamlessly with the minimalism of modern design.</p>
+                    <p>We offer plenty of services to ensure you have a fufilling journey in our resort.</p>
+                </div>
+
+            </section>
+
+            <div class="slideshow-frame">
+
+            <div class=center>
+            </div>
+            
+            <div id="main-cycle" class="cycle-slideshow"
+            data-cycle-fx="scrollHorz"
+            data-cycle-center-horz=true
+            data-cycle-center-vert=true
+            data-cycle-timeout=2000
+            data-cycle-pager=".cycle-pager"
+
+            data-cycle-caption="#alt-caption"
+            data-cycle-caption-template="{{alt}}">
+            
+            <div class="cycle-overlay"></div>
+                <img src="images/hotelbar.jpg" alt="Hotel bar">
+                <img src="images/room2.jpg" alt="The Monarch Room">
+                <img src="images/hotel1.jpg" alt="Reception">
+                <img src="images/nightbar.jpg" alt="Nightbar">
+                <img src="images/room4.jpg" alt="The Oaklight Room">
+                <img src="images/champagne.jpg" alt="Hotel Package">
+
+                
+            <div class="cycle-pager"></div>
+            </div>
+            
+            <div id="alt-caption" class="slideshowcaption"></div>
+
+        </div>
+        
+            <a name="shrinkmachine"></a>
+            <h2>The Shrink Machine</h2>
+            <section class="pagetitleimg" id="shrinkmimg">
+                <div id="smtitle">
+                    <p>Yes--this is what our Shrink Machine actually looks like! Designed by architects and mechanics all the way 
+                        back in 1920, this Shrink Machine was passed down through generations, before it landed
+                        in our possession. Since then, we have used it to build our beloved resort!
+                </p>
+                </div>
+            </section>
+            <div class="buttoncontainer">
+        <div class="button" id="buttonresort"><a href="rooms.html">Check out our Rooms</a></div>
+    </div>
+    </div>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/script.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
+
+<script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+        </body>
+
+            

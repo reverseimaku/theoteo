@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,700;1,300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500&display=swap" rel="stylesheet"> 
+        <title>Contact Us</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body id="bodylightyellow">
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <nav id="menu">
+
+            <ul>
+                
+                <li><a id="logo"></a></li> 
+                <li><a href="index.html" id="mobilehome">Home</a></li>
+                <li><a href="#aboutus" onclick="clickNavA()">About Us <i class="material-icons">&#xe5c5;</i></a>
+                <ul class="sub-menu" id="sub-menu-about">
+                    <li><a href="greenhouse.html">The Greenhouse</a></li>
+                    <li><a href="resort.html">The Resort</a></li>
+                    <li><a href="greenhouse.html#wherearewe">Where are we?</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li><a href="#whatweoffer" onclick="clickNavW()">What we offer <i class="material-icons">&#xe5c5;</i></a>
+                    <ul class="sub-menu" id="sub-menu-wwo">
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="butterflies.html">Butterflies and Rides</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="booknow1.html" id="menubooknow">Book now</a></li>
+                </ul>
+        </nav>
+    
+        <div class="main">
+            <h1>Contact Us</h1>
+            <section class="contactus">
+                <div class="button" id="buttoncontactus"><a href="faq.html">FAQ Section</a></div>
+                
+                <p>Please look at the FAQ section of our website before you contact us.</p>
+            <p>Phone: +610412321231</p>
+            <p>Email: <a href="mailto: enquiries@thegreenhouseresort.com">enquiries@thegreenhouseresort.com</a></p>
+            <p>Send a message below:</p>
+            <form name="contactForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+                <input type="text" id="enquiry-name" name="name" required placeholder="Name">
+            
+                <input type="text" id="enquiry-email" name="email" required placeholder="Email">
+            
+                <input type="tel" id="enquiry-phone" name="phone" required placeholder="Phone"><br>
+            
+            <textarea id="enquiry-message" name="enquiry-message" rows="10" cols="100" placeholder="How can we help?" required></textarea><br>
+            <button class="contactbutton" id="buttoncontactus" onclick="validateForm()">Submit</button>
+            </form>
+
+            </section>
+        </div>
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery.cycle2.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+    <footer>
+    </footer>

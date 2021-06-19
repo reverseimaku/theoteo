@@ -1,0 +1,1801 @@
+#bodygreen {
+    background-color: #7a9979;
+}
+
+#bodyorange {
+    background-color: rgb(241, 202, 157);
+}
+
+#bodygreentexture {
+    background: url(images/greenpaintedwallbuttoninvert.png);
+    background-size: cover;
+    background-size: 100em;
+    background-attachment: fixed;
+    background-position: bottom;
+    
+    
+}
+
+#bodyblue {
+    background-color: #97d6f3;
+}
+
+#bodydarkgreen {
+    
+    background-color: #1a3017;
+}
+
+#bodylightgreen {
+    background-color: #b4e2c2;
+}
+
+#bodyyellow {
+    background-color: #e5d18c;
+}
+
+#bodylightyellow {
+    background-color: #f0e1ab;
+}
+
+#bodyyellowgreen {
+    background-color: #bee3b9;
+}
+body {
+
+    background-attachment: scroll;
+    background-repeat: repeat;
+    font-family: 'Raleway', sans-serif;
+    /*font-weight: 300;*/
+    
+}
+
+
+
+a:link {
+    color: #ffffff;
+}
+
+footer p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    margin: 1em;
+    color: #fff;
+}
+
+.footertitle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    margin: 3em;
+}
+
+
+* {
+
+    margin: 0vw;
+    padding: 0vw;
+}
+
+/* Hamburger menu / Mobile nav */
+.hamburger {
+    background:url("images/menubar.png");
+    background-attachment: fixed;
+    position: fixed;
+    background-size:15em;
+    background-repeat: repeat;
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+    color: #fff;
+    font-size: 2em;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    display: block;
+    margin-left: 75vw;
+}
+
+#hamburger {
+}
+#mobilehome {
+    display: block;
+}
+
+
+
+#menu.show {
+    display: block;
+
+}
+
+
+#menu {
+    display: none;
+    background:url(images/menubar.png);
+    font-size: 1.25em;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    color: #f1f1f1;
+    width: 100%;
+    background-size: 100%;
+
+    font-weight: 300;
+    -webkit-transition: top 0.2s;
+    -moz-transition: top 0.2s;
+      -o-transition: top 0.2s;
+    transition: top 0.2s; /*transition js*/
+    z-index: 2;
+}
+
+
+#menu li {
+    flex-grow: 1;
+}
+
+#menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+#menu li a {
+    text-align: center;
+    padding: 1em;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+#logo {
+    background: url(images/logoresort.png);
+    background-size: 10em;
+    margin-left: 30vw;
+    margin-top: 1em;
+    height: 3.5em;
+    background-repeat: no-repeat;
+    
+    border-bottom: solid 5px rgba(255, 255, 255, 0)!important;
+}
+
+#logo:hover {
+    border-bottom: solid 5px rgba(255, 255, 255, 0)!important;
+    background-color: rgba(0,0,0,0)!important;
+}
+
+#menubooknow {
+    font-weight: bold;
+}
+
+
+
+#menu a:hover {
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    display:block;
+    content: '';
+    border-bottom: solid 5px rgba(255, 255, 255, 0.5);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+      -o-transition: all .5s;
+    transition: all .5s;
+}
+
+#menu li ul li a {
+    color: #fff;
+}
+
+
+
+
+/* submenu */
+#sub-menu-about, #sub-menu-wwo {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    background:url(images/menubar_sub.png);
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+      -o-transition: all .5s;
+    transition: all .5s;
+    
+    
+}
+
+/* change width of submenus */
+#sub-menu-about.mobile, #sub-menu-wwo.mobile {
+    width:100%;
+}
+
+
+
+
+#sub-menu-wwo {
+    margin-left: -10vw;
+}
+
+
+.sub-menu {
+    animation: fadeIn ease 0.25s;
+
+}
+
+.button {
+    margin: 0 auto;
+    margin-top:1em;
+}
+
+.button a {
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    padding: 0.5em;
+    font-size: 200%;
+    background:url(images/menubar.png);
+    color: #fff;
+    box-shadow: inset 0 -5px #000000;
+}
+
+
+.button a:hover {
+    background:url(images/menubar_sub.png);
+    box-shadow: inset 0 0 #000;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+      -o-transition: ease all 1s;
+      transition: ease all 1s;
+}
+
+.contactbutton {
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    padding: 0.5em;
+    font-size: 150%;
+    background:url(images/menubar.png);
+    color: #fff;
+    box-shadow: inset 0 -5px #000000;
+}
+
+
+#buttonhome {
+    margin-top: 2em;
+    text-decoration: none;
+}
+
+#buttonrooms {
+    
+    margin-top: 3em;
+    width:50%;
+}
+
+.ghbuttons {
+    display: block;
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    margin-left: 3vw;
+}
+
+.buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#buttonatttobooknow, #buttonghtoresort, #buttonghtosm {
+    width: 50%;
+    font-size: 0.75em;
+    margin-top: 4em;
+}
+
+#buttonatttobutt {
+    width: 100%;
+    font-size: 0.75em;
+    margin-top: 4em;
+}
+
+#buttonatttobooknow {
+    
+    width: 50%;
+}
+
+#buttonghtoresort {
+    width: 80%;
+}
+
+#buttonghtosm {
+    width: 70%;
+}
+
+#buttontour {
+    font-size: 0.75em;
+}
+
+
+
+
+#buttonresort {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#buttonbooknow {
+    width: 15%;
+}
+
+#buttoncontactus {
+    margin: 2em;
+}
+
+#buttonsubmit {
+    font-family: 'Raleway', sans-serif;
+    width: 15%;
+    font-size: 200%;
+    text-decoration: none;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    background:url(images/menubar.png);
+    color: #fff;
+    box-shadow: inset 0 -5px #000000;
+    
+}
+
+#buttonbookback {
+    float: left;
+    margin-left: 20vw;
+    margin-top: 4em;
+}
+
+#buttonbookdone {
+    float: right;
+    margin-right: 20vw;
+    margin-top: 4em;
+}
+
+
+
+h1 {
+    font-size: 200%;
+    font-weight: 300;
+    padding: 10% 0 0 5%;
+}
+
+.homeimg {
+    background: linear-gradient( rgba(26, 100, 36, 0.5), rgba(255, 255, 255, 0.5)), url('images/ridebutterfly.png');
+
+    height: 37em;
+}
+
+#homeimg2 {
+    background: url('images/sunflower_zipline.png');
+
+}
+
+#homeimg3 {
+    background: url('images/room4.jpg');
+
+}
+
+.homeimg, #homeimg2, #homeimg3 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 70em;
+    background-position: center;
+}
+
+
+.hometitle {
+    background-size: 60em;
+    object-fit: cover;
+
+}
+
+.hometitle p {
+    position: absolute;
+    font-family: 'Alegreya SC', serif;
+    font-style: italic;
+    font-size: 2em;
+    margin-top: 9em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color: #000;
+    animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+.homedescription {
+    background-color: #1a3017;
+    width: 100%;
+    height: 20em;
+    text-align: center;
+}
+
+.homedescription p {
+    position: relative;
+    font-size: 1.4em;
+    color: #fff;
+    margin-left:10%;
+    margin-right: 10%;
+    padding-top:2em;
+}
+
+
+
+/* reviews */
+.homereview {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+
+    margin: 0 0 15em 0;
+    position: absolute;
+}
+.homereview blockquote p {
+    font-family: 'Merriweather', serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: #fff;
+    font-style: italic;
+    padding: 0 0 2em 0;
+    z-index: 2;
+}
+
+.reviewer p {
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    font-size: 2em;
+    z-index: 2;
+    margin-bottom: 1em;
+    margin-top: -1em;
+}
+.homereview blockquote p::before {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    content: '\201C';
+    color: #e5d18c;
+    opacity: 0.5;
+    font-size: 5em;
+    position: relative;
+    top: 0.5em;
+    left: 0.25em;
+
+    z-index: 0;
+}
+
+/* Slideshow */
+
+.slideshow-frame {
+    background: url(images/menubar.png);
+    padding: 1vw;
+    margin: 2vw;
+    width: 90%;
+    background-size: 40vw;
+    z-index: -3;
+}
+#main-cycle { /*cycle container*/
+    object-fit: cover;
+    z-index: 0;
+     margin-top: 2em;
+     position:relative;
+}
+#main-cycle img {
+     width: 100%;
+}
+
+.slideshowcaption {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+/* slideshow pager */
+.cycle-pager { 
+    text-align: center;
+    width: 100%;
+    z-index: 500;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+.cycle-pager span { 
+    font-size: 5em;
+    text-shadow: 2px 2px 2px #000;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active {
+    color: rgb(134, 102, 64);
+}
+.cycle-pager > * { cursor: pointer;}
+
+
+/*faq section*/ 
+
+.faq p {
+    
+    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-left: 5vw;
+    font-size: 1.5em;
+}
+.faqq, .faqa {
+
+    width: 80%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.faqq {
+    padding: 1em;
+    font-size: 2em;
+    font-family: 'Alegreya SC', serif;
+    background-color: #cab568;
+    color: #3a3112;
+    border: none;
+    text-align: left;
+    outline: none;
+    
+}
+.faqa {
+    background-color: #f0e1ab;
+    max-height:0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+      -o-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+
+}
+
+.faqa p {
+    
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.faqq:after {
+    content: '\02795';
+    font-size: 1em;
+    float: right;
+    margin-left: 1em;
+}
+
+.active:after {
+    content: '\2796';
+}
+
+.faqq .active, .faqq:hover {
+    background-color: #695b26;
+    color: #fff;
+}
+
+/*Butterflies section*/
+
+#butterflytitleimg {
+    background: url('images/ridebutterfly.png');
+    background-attachment: fixed;
+    height: 30em;
+    background-position: center;
+}
+
+.butterflies p {
+    font-size: 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    text-align: center;
+}
+.butterflyprofile {
+    display: block;
+}
+
+#butterflytitle {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#butterflytitle > p {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    padding: 1vw 3vw 1vw 3vw;
+    
+}
+
+#butterflyitem {
+    
+    margin: 1em;
+}
+#butterflyitem img {   
+    display: block;
+    object-fit: cover;
+    width: 90vw;
+    height: 90vw;
+    }
+
+    #butterflyitem:hover .butterflyitemdesc {
+        height: 90vw;
+    }
+
+    .butterflyitemtitle, .butterflyitempara {
+        text-align: center;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .butterflyitemtitle {
+        font-size: 1em;
+    }
+    .butterflyitempara {
+        font-size: 0.7em;
+    }
+
+  
+    .butterflyitemdesc {
+        background: rgba(28, 99, 133, 0.8);
+        width: 90vw;
+        height: 0em;
+        margin-top: -90vw;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        -webkit-transition: 0.4s ease;
+        -moz-transition: 0.4s ease;
+          -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+        
+    }
+
+
+.tramcontainer p {
+    width: 15em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.tramimg {
+    background:url(images/tram.png);
+    width: 100%;
+    background-size: 75vw;
+    background-repeat: no-repeat;
+    height: 60vw;
+    background-position: bottom;
+}
+
+
+    /* attraction section*/
+    .attractionitem p {
+        background-color: #fffce3;
+        padding: 2em;
+        color: #65604f;
+        font-size: 1.3em;
+    }
+
+    .attractioncontainer {
+        display: inline-block;
+        position: relative;
+    }
+
+
+    .attractioncontainer img {
+        width: 100vw;
+    }
+
+    .attractionitem {
+        margin-bottom: 5em;
+        
+    }
+
+    /* room section */
+
+    .roomcontainer {
+        display: block;
+    }
+
+    .roomitem {
+        margin-top: 3em;
+    }
+    
+    .roomitempararight, .roomitemparaleft {
+        background-color: #fffce3;
+        margin-top: 1em;
+        padding: 2em;
+        color: #65604f;
+    }
+
+    .roomitempararight p, .roomitemparaleft p {
+        
+        font-size: 1.3em;
+    }
+
+    .roomtitle {
+        font-family: 'Alegreya SC', serif;
+        color: #65604f;
+        font-weight: 500;
+        font-size: 2.7em;
+        margin-left: 6vw;
+        
+    }
+    .roomprice {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+    }
+
+    .roomcontainer img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    #roomdetails {
+        width: 15vw;
+        text-align: center;
+        
+    }
+
+h1
+{
+    font-family: 'Alegreya SC', serif; 
+    font-size: 40pt;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+
+    /* resort section */
+
+    .pagetitleimg {
+
+        width: 100%;
+        background-size: 100%;   
+    }
+
+    #resorttitle {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-top: 15vw;
+    }
+    #resorttitle > p {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-align: center;
+        padding: 1em 3vw 1em 3vw;
+        
+    }
+
+    #smtitle {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-top: 0vw;
+    }
+    #smtitle > p {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-align: center;
+        padding: 1em 3vw 1em 3vw;
+        
+    }
+
+
+    #resort p {
+        text-align: center;
+    }
+    #resorttitleimg {
+        background: url('images/hotel1.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        
+        height: 40em;
+    }
+
+    #shrinkmimg {
+        background: url('images/shrinkmachine.jpg');
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 55em;
+    }
+
+
+    /* book section */
+
+    .bookpage1 {
+        font-size: 2em;
+        margin-left: 3em;
+        padding-top: 1em;
+    }
+
+    .bookpagepara {
+        font-size: 1.5em;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding-top: 1em;
+    }
+    
+    .book1container {
+        margin: 2em;
+    }
+
+    .book1container p {
+        font-size: 1.5em;
+        padding-left: 1em;
+        padding-right: 3em;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    
+    .book1container img {
+        padding: 2em;
+        display: block;
+        object-fit: cover;
+        width: 65vw;
+        height: 65vw;
+        text-decoration: none;
+    }
+
+    .book1item {
+        background-color: #eeffe3;
+        padding-bottom: 2em;
+        text-decoration: none;
+        margin: 1em;
+
+        opacity: 1;
+        animation: BookRoomMoveDown 1s ease;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+          -o-transition: all .5s;   
+        transition: ease 2s;
+        
+    }
+
+    @keyframes BookRoomMoveDown {
+        0% {
+            margin-top: 0em;
+            opacity: 0;
+        }
+        100% {
+            margin-top: 1em;
+            opacity: 1;
+        }
+    }
+
+    .book1item p, .book1item a {
+        color: #000;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    .book1item:hover {
+        background-color: #fff;
+    }
+    
+    /* book section room page */
+
+    [type=checkbox]  { 
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      [type=checkbox] + img {
+        cursor: pointer;
+      }
+      
+      [type=checkbox]:checked + img {
+        background-color: #8d9c83;
+      }
+
+      [type=radio] {
+          width: 25px;
+          height: 25px;
+          margin-left: 4em;
+          margin-top: 1em;
+      }
+
+
+      #yes, #no {
+          font-size: 1.5em;
+      }
+
+      /*book attractions*/
+    .book1attcontainer {
+        margin: 2em;
+    }
+
+    .book1attcontainer img {
+        background-color: #eeffe3;
+        margin: 1em;
+        padding: 2em;
+        display: block;
+        object-fit: cover;
+        width: 60vw;
+        height: 60vw;
+        text-decoration: none;
+    }
+
+    .book1attcontainer p {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .book1attitem {
+
+        text-decoration: none;
+
+    }
+
+    .book1attitem img:hover {
+        background-color: #8d9c83;
+    }
+
+    /* book section 2 */
+    .bookdropdown {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2em;
+        border: none;
+        margin-top: 2vw;
+    }
+
+    #dropdownday {
+        margin-left: 2em;
+    }
+
+    .bookpage3 {
+        text-align: center;
+        font-size: 2em;
+        margin: 1em;
+    }
+
+    .bookpage3 p {
+        padding-left: 2em;
+        padding-top: 5em;
+    }
+
+    /* tours */
+    .tournote {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-weight: 300;
+        color: white;
+        font-size: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .tournote p {
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+        padding-top: 1em;
+    }
+
+    .tourcontainer {
+        background-color:rgba(255,252,227, 0.6);
+        padding: 2em;
+        margin: 2em;
+
+    }
+
+    .tourcontainer p {
+        color: rgba(0, 0, 0, 0.8);
+        padding: 1em 0 1em 0;
+        font-size: 1.5em;
+    }
+
+    .tourtitle {
+        font-weight: 300;
+        font-size: 3em;
+        text-align: center;
+    }
+    .tourday {
+        font-size: 3em;
+        padding: 1em 0 0 0;
+        font-weight: 300;
+    }
+
+    .tourtime {
+        font-size: 2em;
+    }
+
+    .tourbackground {
+        background: url("images/corn.jpeg");
+        width: 100%;
+        background-attachment: fixed;
+    }
+
+
+    /* contact us */
+
+    .contactus, input[type=text], input[type=tel], textarea {
+        text-align: center;
+        align-items: center;
+        background-color: #faeebf;
+        margin: 2em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-top: 1em;
+        overflow-wrap: break-word;
+        
+    }
+
+
+    #dietary-req {
+        margin-left: 0em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .contactus p {
+        font-size: 1.5em;
+        margin-top: 0.6em;
+        margin-bottom: 0.3em;
+        
+    }
+
+    .contactus p a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .contactus p a:hover {
+        color: rgba(0, 0, 0, 1.0);
+    }
+
+    input[type=text], input[type=tel], textarea {
+        
+        display: flex;
+        padding: 0.25em;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 400;
+        font-family: 'Raleway';
+        background-color: #fff;
+        font-size: 1.25em;
+        width: 100%;
+        height: 50%;
+        box-sizing: border-box;
+    }
+
+    /*where are we section*/
+
+    .wherearewe {
+        margin: 2em;
+        text-align: center;
+
+        
+    }
+    .wherearewe p {
+        display: block;
+        font-size: 2em;
+        
+    }
+
+    /* Greenhouse section */
+    #ghcontainer {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        justify-content: space-evenly;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        
+    }
+
+    .greenhouseimg {
+        background: url('images/greenhouse1.jpg');
+        width: 100%;
+        background-attachment: fixed;
+        height: 60em;
+        background-size: 65em;
+    }
+    
+    #ghitem img {   
+    display: block;
+    object-fit: cover;
+    width: 30em;
+    height: 30em;
+    }
+
+    #ghitem:hover .ghitemdesc {
+        height: 30em;
+    }
+
+    .ghitemtitle, .ghitempara {
+        text-align: center;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .ghitemtitle {
+        font-size: 2.5em;
+        margin: 2em 0 1em 0;
+    }
+    .ghitempara {
+        font-size: 1.25em;
+        margin: 0 2em 0 2em;
+    }
+
+    .ghitemdesc {
+        background: rgba(18, 71, 38, 0.8);
+        width: 30em;
+        height: 0em;
+        margin-top: -30em;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        -webkit-transition: 0.4s ease;
+        -moz-transition: 0.4s ease;
+          -o-transition: 0.4s ease; 
+        transition: 0.4s ease;
+        
+    }
+    #ghtitle {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2em 0 3em 0;
+        top: 32.5vw;
+
+    }
+    
+    #ghtitle > p {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 300;
+        padding: 0 2em 0 2em;
+        text-align: center;
+    }
+
+    #ghtitle p {
+        padding-top: 1em;
+    }
+
+
+    h2 {
+        font-family: 'Alegreya SC', serif;
+        font-size: 3em;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.5);
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-bottom: 1em;
+
+    }
+    h3 {
+        color: rgba(0, 0, 0, 0.6);
+        margin-bottom: 1em;
+        margin-left: 1em;
+        font-size: 2em;
+    }
+
+
+
+    .booknowbuttoncenter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* book now button*/
+    .booknowbutton a {
+        margin-left: 2em;
+        position: absolute;
+        margin-top: 1em;
+        padding: 0.5em;
+        font-size: 200%;
+        background:url(images/menubar.png);
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .booknowbutton a:hover{
+        background:url();
+        background-color: #eeffe3;
+        color: #2b412a;
+    }
+
+    
+
+@media only screen and (min-width: 1000px) { /*desktop version code! */
+    .hamburger {
+        display:none;
+    }
+    
+    #mobilehome {
+        display: none;
+    }
+    #menu {
+        display: block;
+        background:url(images/menubar.png);
+        font-size: 1.5vw;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        color: #f1f1f1;
+        width: 100%;
+        height: 8.2vw;
+    }
+
+    #menu li ul {
+        position: absolute;
+    }
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    #menu li ul {
+        display: none;
+    }
+
+    #menu li a {
+        padding: 2em;
+    }
+
+
+    /* submenu */
+    #sub-menu-about, #sub-menu-wwo {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    flex-direction: row;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+      -o-transition: all .5s;
+    transition: all .5s;
+    
+    }
+
+    #sub-menu-wwo {
+        margin-left: -10vw;
+    }
+
+
+    #logo {
+        background: url(images/logoresort.png);
+        background-size: 7em;
+        margin-left: 2em;
+        margin-top: 0.7em;
+        width: 5em;
+        height: 5em;
+        background-repeat: no-repeat;
+        padding: 0;
+        
+        border-bottom: solid 5px rgba(255, 255, 255, 0)!important;
+    }
+
+    /*home section*/
+    .homeimg {
+        background: linear-gradient( rgba(26, 100, 36, 0.5), rgba(255, 255, 255, 0.5)), url('images/ridebutterfly.png');
+        background-size: 100%;
+        height: 37em;
+        background-attachment: fixed;
+    }
+
+    #homeimg2 {
+        background: url('images/sunflower_zipline.png');
+        width: 100%;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: center;
+    }
+    
+    #homeimg3 {
+        background: url('images/room4.jpg');
+        width: 100%;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .hometitle {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .homedescription {
+        background-color: #1a3017;
+        background-size: 100em;
+        width: 100%;
+        height: 15em;
+        text-align: center;
+    }
+
+    
+    /* reviews */
+    .homereview blockquote p {
+        font-family: 'Merriweather', serif;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: #fff;
+        font-style: italic;
+        padding: 0 0 2em 0;
+        z-index: 2;
+    }
+
+    /*greenhouse*/
+    
+    .greenhouseimg {
+        background: url('images/greenhouse1.jpg');
+        width: 100%;
+        background-attachment: fixed;
+        height: 60em;
+        background-size: 100%;
+    }
+
+    #ghcontainer {
+        display: flex;
+        flex-direction: row;
+        margin: 1em;
+        justify-content: space-evenly;
+        
+    }
+    #ghtitle > p {
+        font-size: 1.75vw;
+    }
+
+    #ghitem img {   
+        display: block;
+        object-fit: cover;
+        width: 30vw;
+        height: 30vw;
+        }
+    
+        #ghitem:hover .ghitemdesc {
+            height: 30vw;
+        }
+    
+        .ghitemtitle, .ghitempara {
+            text-align: center;
+            color: #fff;
+            font-weight: 300;
+        }
+    
+        .ghitemtitle {
+            font-size: 2.5vw;
+            margin: 2em 0 1em 0;
+        }
+        .ghitempara {
+            font-size: 1.25em;
+            margin: 0 2em 0 2em;
+        }
+
+    .ghitemdesc {
+        background: rgba(18, 71, 38, 0.8);
+        width: 30vw;
+        height: 0vw;
+        margin-top: -30vw;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        -webkit-transition: 0.4s ease;
+        -moz-transition: 0.4s ease;
+          -o-transition: 0.4s ease; 
+        transition: 0.4s ease;
+        
+    }
+
+    .ghbuttons {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    
+    .buttoncontainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 2vw;
+    }
+    #buttonatttobutt, #buttonatttobooknow, #buttonghtoresort, #buttonghtosm {
+        width: 70%;
+        font-size: 1vw;
+    }
+
+    #buttontour {
+        font-size: 1em;
+    }
+
+    /* attraction section*/
+    h3 {
+        color: rgba(0, 0, 0, 0.6);
+        margin-bottom: 1em;
+        margin-left: 0;
+        font-size: 2em;
+    }
+    .attractionitem p {
+        background-color: #fffce3;
+        width: 20em;
+        padding: 2em;
+        color: #65604f;
+        font-size: 1.3em;
+    }
+    
+    .attractioncontainer {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    .attractioncontainer img {
+        display: block;
+        object-fit: cover;
+        width: 40em;
+        height: 30em;
+    }
+
+    .attractionitem {
+        flex-grow: 1;
+        height: 35em;
+        margin: 2em;
+    }
+    .attractionitem + .attractionitem {
+        margin-left: 2%;
+    }
+
+        /* room section */
+
+        .roomcontainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        .roomitem {
+            flex-grow: 1;
+            margin-left: 4em;
+            margin-top: 3em;
+        }
+        
+        .roomitempararight {
+            background-color: #fffce3;
+            width: 30em;
+            margin-top: 1em;
+            padding: 2em;
+            margin-right: 2em;
+            color: #65604f;
+        }
+    
+        .roomitempararight p, .roomitemparaleft p {
+            
+            font-size: 1.3em;
+        }
+    
+        .roomitemparaleft {
+            background-color: #fffce3;
+            width: 30em;
+            margin-top: 1em;
+            padding: 2em;
+            color: #65604f;
+        }
+    
+        .roomtitle {
+            font-family: 'Alegreya SC', serif;
+            color: #65604f;
+            font-weight: 500;
+            font-size: 2.7em;
+            margin-left: 0;
+        }
+        .roomprice {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2em;
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+    
+        .roomitem + .roompara {
+            margin-left: 2%;
+        }
+    
+    
+        .roomcontainer img {
+            padding-bottom: 4em;
+            display: block;
+            object-fit: cover;
+            width: 40vw;
+            height: 40vw;
+        }
+    
+        #roomdetails {
+            width: 15vw;
+            text-align: center;
+            
+        }
+        #roomdetails + #roomdetails {
+            margin-left: 2%;
+        }
+
+        /*Butterflies section */
+        #butterflytitleimg {
+            background: url('images/ridebutterfly.png');
+            background-attachment: fixed;
+            height: 30em;
+        }
+        
+        .butterflyprofile {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 2em;
+        }
+        #butterflyitem img {   
+            display: block;
+            object-fit: cover;
+            width: 40vw;
+            height: 40vw;
+            }
+        
+            #butterflyitem:hover .butterflyitemdesc {
+                height: 40vw;
+            }
+        
+            .butterflyitemtitle, .butterflyitempara {
+                text-align: center;
+                color: #fff;
+                font-weight: 300;
+            }
+        
+            .butterflyitemtitle {
+                font-size: 2.5vw;
+                margin: 1vw 0 1vw 0;
+            }
+            .butterflyitempara {
+                font-size: 0.8vw;
+                margin: 0 1vw 0 1vw;
+            }
+        
+          
+            .butterflyitemdesc {
+                background: rgba(28, 99, 133, 0.8);
+                width: 40vw;
+                height: 0vw;
+                margin-top: -40vw;
+                position: absolute;
+                overflow: hidden;
+                z-index: 1;
+                -webkit-transition: 0.4s ease;
+                -moz-transition: 0.4s ease;
+                  -o-transition: 0.4s ease;
+                transition: 0.4s ease;
+                
+            }
+            .tramcontainer {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            .tramcontainer p {
+                width: 15em;
+                margin-top: 5em;
+                padding: 2em;
+                margin-right: 2em;
+            }
+            .tramimg {
+                background:url(images/tram.png);
+                width: 50em;
+                background-repeat: no-repeat;
+                height: 35em;
+                background-size: 50em;
+                background-attachment: scroll;
+                background-position: center bottom;
+                margin: 2em;
+            }
+            
+
+/* contact us */
+
+.contactus, input[type=text], input[type=tel], textarea  {
+    text-align: center;
+    align-items: center;
+    background-color: #faeebf;
+    margin: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+}
+input[type=text], input[type=tel], textarea {
+    
+    display: flex;
+    padding: 0.25em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-family: 'Raleway';
+    background-color: #fff;
+    font-size: 1.25em;
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+.contactbutton {
+    font-size: 200%;
+}
+
+
+    /* book section */
+
+    .bookpage1 {
+        font-size: 2em;
+        margin-left: 3em;
+        padding-top: 1em;
+    }
+
+    .bookpagepara {
+        font-size: 1.5em;
+        margin-left: 4em;
+        margin-right: 4em;
+        padding-top: 1em;
+    }
+    
+    .book1container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2em;
+    }
+
+    .book1container p {
+        font-size: 1.5em;
+        padding-left: 1em;
+        padding-right: 3em;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    
+    .book1container img {
+        padding: 2em;
+        display: block;
+        object-fit: cover;
+        width: 20vw;
+        height: 20vw;
+        text-decoration: none;
+    }
+
+    .book1item {
+        background-color: #eeffe3;
+        padding-bottom: 2em;
+        text-decoration: none;
+        margin: 1em;
+
+        opacity: 1;
+        animation: BookRoomMoveDown 1s ease;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+          -o-transition: all .5s;   
+        transition: ease 2s;
+        
+    }
+
+    /*book attractions*/
+    
+    .book1attcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2em;
+    }
+
+    .book1attcontainer img {
+        background-color: #eeffe3;
+        margin: 1em;
+        padding: 2em;
+        display: block;
+        object-fit: cover;
+        width: 15vw;
+        height: 15vw;
+        text-decoration: none;
+    }
+
+        /* book section 2 */
+        .bookdropdown {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.5em;
+            border: none;
+            margin-top: 2vw;
+        }
+    
+        #dropdownday {
+            margin-left: 10em;
+        }
+    
+        #dropdownmonth {
+            margin-left: 3em;
+        }
+
+        .bookpage3 {
+            text-align: center;
+            font-size: 2em;
+        }
+    
+        .bookpage3 p {
+            padding-left: 2em;
+            padding-top: 5em;
+        }
+
+
+    /* Slideshow */
+    #main-cycle { /*cycle container*/
+        object-fit: cover;
+        z-index: 0;
+         margin-top: 2em;
+         position:relative;
+    }
+    
+    .slideshow-frame {
+        background: url(images/menubar.png);
+        padding: 2vw;
+        margin-left: 22vw;
+        margin-right: 20vw;
+        height: 40vw;
+        width: 50%;
+        background-size: 40vw;
+        z-index: -3;
+    }
+    .slideshowcaption {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: #fff;
+        margin-top: 1vw;
+        text-align: center;
+    }
+
+    /* slideshow pager */
+.cycle-pager { 
+    width: 20em;
+    z-index: 500;
+    top: 0;
+    text-align: center;
+    overflow: hidden;
+}
+.cycle-pager span { 
+    font-size: 5em;
+    text-shadow: 2px 2px 2px #000;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;    
+}
+
+/* shrink machine */
+#shrinkmimg {
+    background: url('images/shrinkmachine.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 40em;
+}
+
+    }
