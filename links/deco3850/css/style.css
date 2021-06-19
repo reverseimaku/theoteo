@@ -1,0 +1,742 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: "Balsamiq Sans", cursive;
+  background-color: rgb(255, 249, 232);
+}
+
+img {
+  font-size: 1em;
+  color: #000;
+}
+
+/* Menu */
+#menu ul {
+  z-index: 1;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-image: url("../images/patterns/oilpainting.jpg");
+  background-size: 100%;
+  position: fixed;
+  font-size: 1.1em;
+}
+
+#menu ul li {
+  padding: 1em;
+  font-size: 1em;
+  list-style-type: none;
+}
+
+#menu ul li a,
+#menu ul li a:link {
+  text-decoration: none;
+  color: rgb(88, 52, 52);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#menu ul li a:visited {
+  color: rgb(88, 52, 52);
+}
+#menu ul li a:hover {
+  color: rgb(146, 103, 103);
+}
+
+#menu ul li a:active {
+  color: rgb(189, 153, 153);
+}
+
+#menu ul li #website {
+  text-transform: uppercase;
+  font-family: "Chelsea Market", sans-serif;
+  color: #ca5555;
+}
+
+#menu ul li #website:hover {
+  color: #c77c7c;
+}
+
+h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 4em;
+  color: rgb(126, 79, 41);
+  margin-left: 2em;
+  padding-top: 1em;
+}
+
+h2 {
+  font-family: "Acme", sans-serif;
+  color: rgb(126, 79, 41);
+  margin: 1em 2em 1em 2em;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h3,
+h4 {
+  font-family: "Acme", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+
+  color: rgb(126, 79, 41);
+}
+
+.simplecontainer h3 {
+  color: black;
+}
+
+.homedivider {
+  width: 100%;
+  height: 4em;
+  background: linear-gradient(
+    rgb(231, 154, 174),
+    rgb(243, 199, 199),
+    rgb(255, 249, 232)
+  );
+}
+
+.divider {
+  width: 100%;
+  height: 2em;
+  background: linear-gradient(
+    rgb(252, 229, 180),
+    rgb(255, 210, 112),
+    rgb(255, 210, 112)
+  );
+  border-bottom: rgb(243, 173, 42) 10px solid;
+}
+/* Flex container for single descriptions */
+.container1desc,
+.container2desc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container1desc {
+  padding: 3em;
+}
+
+.container1desc > p,
+.container1desc .rightpara {
+  padding: 0em 10em 0em 3em;
+  font-size: 1.2em;
+}
+
+.container1desc .rightpara p {
+  padding: 2em 0 2em 0;
+}
+
+.container2desc {
+  padding: 2em;
+}
+.container2desc .lefttitle {
+  font-size: 1.5em;
+  padding-left: 10em;
+}
+.container2desc > p,
+.container2desc .rightpara {
+  padding: 0em 13em 0em 5em;
+  font-size: 1em;
+}
+
+#containerdaytonight {
+  background-image: linear-gradient(rgba(255, 249, 232, 1), rgba(0, 0, 0, 0));
+  height: 10em;
+}
+
+#containernighttext > .lefttitle,
+#containernighttext .rightpara,
+#containernighttext p {
+  color: #fff;
+}
+
+.lefttitle {
+  padding: 0em 0em 0em 5em;
+  color: rgb(170, 98, 30);
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lefttitle img {
+  display: block;
+  margin: 0 auto;
+  width: 2em;
+  padding-top: 1em;
+}
+
+.bearimg img {
+  height: 10em;
+  padding-top: 4em;
+  display: block;
+  margin: 0 auto;
+}
+
+/* A1. Home Section */
+/* source code for transparent background: https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image */
+
+#home {
+  padding-top: 5em;
+  background-image: linear-gradient(rgba(151, 104, 110, 0.4), rgba(0, 0, 0, 0)),
+    url("../images/patterns/pastel_2.jpg");
+  background-color: rgb(75, 44, 53);
+  background-size: 100%;
+  height: 36em;
+  background-attachment: fixed;
+}
+
+#home > p {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Chelsea Market", sans-serif;
+}
+
+#homelogo {
+  display: block;
+  margin: 0 auto;
+  height: 15em;
+}
+
+/* B1. Ideal Concept */
+
+.mockupcontainer {
+  display: flex;
+  align-items: center;
+  background: url("../images/patterns/pastel_1.jpg");
+  background-color: rgb(217, 243, 243);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.mockupcontainer p {
+  text-align: center;
+}
+.mockupcontainer img {
+  padding-left: 2em;
+  max-width: 35em;
+}
+
+.mockuptextcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  margin-top: 5em;
+}
+
+.mockuptextcontainer > p {
+  font-size: 1em;
+  background: linear-gradient(#ffd5d5, #dcefff);
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 1em;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+/* Final Product */
+
+/* https://codepen.io/sstromick/pen/KKwQbrx rotation image back & forth */
+
+/* Circle images */
+
+.circleimg img {
+  border-radius: 50%;
+  height: 15em;
+  border: rgb(150, 81, 54) 6px solid;
+  outline: rgb(199, 172, 122) 5px solid;
+}
+
+.circledesccontainer {
+  padding: 2em 0 2em 0;
+}
+
+#circlebg1 {
+  background-color: rgba(238, 199, 177, 0.7);
+}
+#circlebg2 {
+  background-color: rgba(255, 232, 181, 0.7);
+}
+
+.circledesccontainer,
+.circleimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.circleimg + .circleimg {
+  padding-left: 2em;
+}
+
+.circleimg img + .circleimg p,
+.circleimg p + .circleimg img {
+  padding: 0em 2em 0em 2em;
+}
+
+.circleimg p {
+  width: 16em;
+  font-size: 0.9em;
+  padding: 2em 2em 2em 2em;
+}
+
+/* Simple Container functions */
+.largesimplecontainer,
+.simplecontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.simplecontainer {
+  padding: 2em;
+}
+
+.simplecontainer img {
+  height: 15em;
+}
+
+.simpledesc {
+  padding: 0 2em 0 2em;
+}
+
+.simpledesc p,
+.simpledesc ul {
+  max-width: 20em;
+}
+
+#acryliccontainer {
+  background-color: rgb(183, 180, 235);
+}
+#rfidcontainer {
+  background-color: rgb(217, 200, 248);
+}
+#neopixelscontainer {
+  background-color: rgb(210, 246, 247);
+}
+#googlespeechcontainer {
+  background-color: rgb(190, 175, 224);
+}
+#unitycontainer {
+  background-color: rgb(200, 219, 241);
+}
+
+/* flex container for background section of physical form */
+.bgsketch {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 6em 0 6em;
+}
+
+.woodtexturebg {
+  background-image: url("../images/patterns/woodtexture.jpg");
+  background-color: #d6b9a2;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.nightskybg {
+  background: url("../images/patterns/nightsky.jpg");
+  background-color: rgb(85, 55, 72);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+#containerbg1 {
+  background-color: rgba(255, 233, 209, 0.7);
+}
+
+#containerbg2 {
+  background-color: rgba(255, 249, 232, 0.7);
+}
+.backgroundcontainer p {
+  width: 30em;
+}
+
+.bgsketch {
+  padding: 4em 0 4em 0;
+}
+
+.backgroundcontainer img,
+.bgsketch img {
+  max-width: 40%;
+}
+
+.bgsketchnotes p {
+  background-color: rgb(250, 230, 208);
+  padding: 2em;
+  font-size: 1.2em;
+  width: 13em;
+  margin-right: 2em;
+}
+
+.bgsketchnotes img {
+  width: 10em;
+  position: absolute;
+  margin-left: 15em;
+  margin-top: -8em;
+}
+
+/* Exhibit */
+.exhibitgallery {
+  display: flex;
+  justify-items: space-evenly;
+  align-items: flex-start;
+}
+.exhibitgallerycol {
+  display: flex;
+  flex-direction: column;
+}
+.exhibitgallery img,
+.exhibitgallerycol {
+  margin: 1%;
+}
+
+.exhibitgallery img {
+  border: 10px #856746 outset;
+}
+
+#exhibitdaypic img {
+  display: block;
+  margin: 0 auto;
+  border: 15px #856746 outset;
+}
+#exhi1 {
+  width: 20em;
+}
+
+#exhi2 {
+  width: 20em;
+}
+
+#exhi3 {
+  width: 30em;
+}
+
+#nightexhibit {
+  background: url("../images/exhibit/exhibit_night.jpg");
+  background-color: #000;
+  background-attachment: fixed;
+  background-size: 100%;
+  width: 100%;
+  height: 20em;
+}
+
+/* Final Video */
+#productvideo {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+#productvideo video {
+  border: 10px #ffeb7b dotted;
+}
+#productvideo p {
+  margin-top: 0.5em;
+}
+
+/* Design Process */
+
+#designprocess {
+  margin-bottom: 4em;
+}
+.designdecisionscontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5em;
+}
+
+#designdecisionsbg {
+  background: url(../images/patterns/pastel_1.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 0.5em;
+}
+.ddlefticons img {
+  width: 13em;
+}
+.ddlefticons {
+  text-align: center;
+}
+
+.ddrighttext {
+  background: url(../images/patterns/vectorbg.jpg);
+  background-size: 200%;
+  background-position: center;
+  background-color: rgb(225, 196, 245);
+  padding: 2em;
+  width: 30em;
+}
+
+.ddrighttext p {
+  padding: 0.5em 0 0.5em 0;
+}
+
+.ddlefticons h3 {
+  color: rgb(182, 118, 118);
+  font-size: 2em;
+  text-align: center;
+  width: 10em;
+  padding: 0.5em 2em 0.5em 2em;
+}
+
+/* User Research/Interview */
+.usercontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 4em 0 2em 0;
+}
+
+.useritem {
+  width: 30em;
+}
+.useritem img {
+  width: 10em;
+  display: block;
+  margin: 0 auto;
+}
+.useritemp {
+  background-color: rgb(195, 231, 215);
+  padding: 2em;
+}
+
+.useritemp p {
+  padding: 1em 0 1em 0;
+}
+
+.usercontainer h3 {
+  text-align: center;
+  padding: 1em;
+  font-size: 2em;
+}
+
+/* Prototype */
+.prototypecontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.prototypecontainer h3 {
+  text-align: center;
+  font-size: 2em;
+}
+.prototypecontainer img {
+  width: 20em;
+  padding: 1em;
+  display: block;
+}
+
+.prototypecontainer p {
+  margin-top: 1em;
+  margin-left: 1em;
+  background-color: #ffdfaf;
+  padding: 1em;
+  background-size: 100%;
+  width: 18em;
+}
+
+/* Exhibit Materials */
+.exhibitmaterials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin: 3em 0 3em 0;
+  font-family: "Chelsea Market", sans-serif;
+  font-size: 1.5em;
+}
+
+.exhibitmaterials p {
+  text-align: center;
+  margin-top: 2em;
+}
+.brochure a {
+  display: flex;
+  flex-direction: column;
+  color: #8a4040;
+}
+.brochure a img {
+  width: 10em;
+  display: block;
+  margin: 0 auto;
+}
+
+.brochure a:link {
+  text-decoration: none;
+  text-align: center;
+}
+.brochure a img:hover {
+  opacity: 0.7;
+}
+
+.stickers img {
+  max-width: 5em;
+}
+
+#stickerimg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.shirt img,
+.logo img {
+  width: 10em;
+}
+
+/* Supporting Material */
+
+#relatedlinks {
+  background-image: linear-gradient(
+      rgba(112, 49, 49, 0.3),
+      rgba(112, 49, 49, 0.3)
+    ),
+    url("../images/tree_1.PNG");
+  background-color: rgb(57, 92, 56);
+  background-size: 120% 120%;
+  padding-bottom: 3em;
+}
+
+#relatedlinks h1 {
+  color: rgb(245, 226, 217);
+}
+.relatedcontainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.relatedcontainer img {
+  width: 5em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+#swan {
+  text-align: center;
+}
+#swan img {
+  width: 8em;
+}
+
+#whitetext p {
+  color: white;
+}
+
+.relatedcontainer a:hover {
+  opacity: 0.7;
+}
+
+.relatedcontainer a {
+  font-family: "Chelsea Market", sans-serif;
+  color: rgb(245, 226, 217);
+  text-decoration: none;
+  font-size: 2em;
+}
+
+/* About me */
+#aboutme {
+  background-image: url("../images/patterns/pastel_2.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  padding-bottom: 5em;
+}
+
+.aboutcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.aboutpara {
+  margin-left: 2em;
+  color: #4e2828;
+}
+.aboutcontainer p {
+  max-width: 20em;
+  font-size: 1.5em;
+}
+.aboutcontainer img {
+  max-width: 20em;
+}
+
+.aboutlinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5em;
+}
+
+.aboutlinks a img {
+  width: 6em;
+  display: block;
+  margin: 0 auto;
+}
+.aboutlinks a p {
+  font-family: "Acme", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  display: block;
+  margin: 0 auto;
+}
+.aboutlinks a {
+  text-decoration: none;
+  color: #4e2828;
+}
+.aboutlinks a:hover {
+  opacity: 0.7;
+}
+
+/* References */
+.refcontainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.refitem {
+  width: 30em;
+}
+.bibliography,
+.other {
+  padding: 0.5em 0 0.5em 0;
+}
+.bibliography p {
+  padding: 0.5em 0 0.5em 0;
+}
+#references a {
+  text-decoration: none;
+}
+#references a:link {
+  color: #8a4040;
+}
+#references a:visited {
+  color: #523333;
+}
+#references a:hover {
+  color: #d89999;
+}
+
+#references a:active {
+  color: #8a4040;
+}
