@@ -48,11 +48,17 @@ body {
     /*font-weight: 300;*/
     
 }
-
-
+.reference p {
+    padding: 0.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
 a:link {
     color: #ffffff;
+}
+
+footer a:visited {
+    color: #fff;
 }
 
 footer p {
